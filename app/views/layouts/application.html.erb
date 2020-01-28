@@ -42,13 +42,13 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="<%= root_path %>">
         <%= image_tag("VoiceOfHeavenLogo.JPG", {:class => "d-inline-block align-top", :style => "height:30px;width:30px;"}) %>
-        <strong>Voice of Heaven</strong>
+        <strong>VOICE OF HEAVEN</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="https://www.youtube.com/channel/UCOv7i1ojVrfHxMj2KAuKxtg" target="_blank">
-        <strong>Subcribe Youtube Channel</strong>
+        <strong>SUBSCRIBE YOUTUBE CHANNEL</strong>
       </a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -57,24 +57,24 @@
               VOICE
             <% end %>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="<%= voices_path %>"><strong>Voicing</strong></a>
-              <a class="dropdown-item" href="<%= voices_path %>#Overcoming"><strong>Overcoming</strong></a>
-              <a class="dropdown-item" href="<%= voices_path %>#Indwelling"><strong>Indwelling</strong></a>
-              <a class="dropdown-item" href="<%= voices_path %>#Conquering"><strong>Conquering</strong></a>
-              <a class="dropdown-item" href="<%= voices_path %>#Empowering"><strong>Empowering</strong></a>
+              <a class="dropdown-item" href="<%= voices_path %>"><strong>VOICING</strong></a>
+              <a class="dropdown-item" href="<%= voices_path %>#Overcoming"><strong>OVERCOMING</strong></a>
+              <a class="dropdown-item" href="<%= voices_path %>#Indwelling"><strong>INDWELLING</strong></a>
+              <a class="dropdown-item" href="<%= voices_path %>#Conquering"><strong>CONQUERING</strong></a>
+              <a class="dropdown-item" href="<%= voices_path %>#Empowering"><strong>EMPOWERING</strong></a>
             </div>
           </li>
-          <li class="nav-item <%= active_class?(abouts_path) %>">
-            <a class="navbar-brand nav-link" href="<%= abouts_path %>">About</a>
-          </li>
           <li class="nav-item <%= active_class?(resources_path) %>">
-            <a class="navbar-brand nav-link" href="<%= resources_path %>">Resources</a>
+            <a class="navbar-brand nav-link" href="<%= resources_path %>">WATCH</a>
+          </li>
+          <li class="nav-item <%= active_class?(abouts_path) %>">
+            <a class="navbar-brand nav-link" href="<%= abouts_path %>">ABOUT</a>
           </li>
           <li class="nav-item <%= active_class?(gives_path) %>">
-            <a class="navbar-brand nav-link" href="<%= gives_path %>">Give</a>
+            <a class="navbar-brand nav-link" href="<%= gives_path %>">GIVE</a>
           </li>
           <li class="nav-item <%= active_class?(contacts_path) %>">
-            <a class="navbar-brand nav-link" href="<%= contacts_path %>">Contact</a>
+            <a class="navbar-brand nav-link" href="<%= contacts_path %>">CONTACT</a>
           </li>
         </ul>
       </div>

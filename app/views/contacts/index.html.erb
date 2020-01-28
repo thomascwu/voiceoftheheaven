@@ -4,12 +4,19 @@
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto text-center">
         <br><br><br><br>
-        <h2 class="animated rotateIn text-white mb-5">Subscribe to receive updates!</h2>
-        <form class="form-inline d-flex">
-          <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address">
-          <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-        </form>
-
+        <h2 class="animated rotateIn text-white mb-5">SUBSCRIBE TO RECEIVE UPDATES!</h2>
+        <span id="emailsubscription" style="color: #62c6bb; font-size: 1.5em; display:none;">THANK YOU FOR SUBSCRIBING!</span>
+        <br>
+        <input id="emailaddressfield" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address">
+        <br>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('emailsubscription').style.display = 'block';">  
+          SUBSCRIBE
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('emailaddressfield').value = '';
+                                                               document.getElementById('emailsubscription').style.display = 'none';">
+          CLEAR
+        </button>
       </div>
     </div>
   </div>
@@ -27,7 +34,7 @@
             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
             <h4 class="text-uppercase m-0">Address</h4>
             <hr class="my-4">
-            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            <div class="text-black-50">4923 Market Street, Orlando FL</div>
           </div>
         </div>
       </div>
@@ -38,7 +45,7 @@
             <i class="fas fa-envelope text-primary mb-2"></i>
             <h4 class="text-uppercase m-0">Email</h4>
             <hr class="my-4">
-            <div class="small text-black-50">
+            <div class="text-black-50">
               <a href="#">contact@voiceoftheheaven.com</a>
             </div>
           </div>
@@ -51,7 +58,7 @@
             <i class="fas fa-mobile-alt text-primary mb-2"></i>
             <h4 class="text-uppercase m-0">Phone</h4>
             <hr class="my-4">
-            <div class="small text-black-50">+1 (555) 902-8832</div>
+            <div class="text-black-50">+1 (919) 799-2176</div>
           </div>
         </div>
       </div>
