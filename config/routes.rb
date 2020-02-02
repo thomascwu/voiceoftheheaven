@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stores
   resources :contacts
   resources :resources
   resources :gives

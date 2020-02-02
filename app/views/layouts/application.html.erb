@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"  >
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>Voice of Heaven</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+
+    <meta property="og:site_name" content="Voice of Heaven Ministries"/>
+    <meta property="og:title" content="VOICEofHeaven &mdash; VOH Ministries"/>
+    <meta property="og:url" content="http://www.voiceoftheheaven.com"/>
+    <meta property="og:type" content="website"/>
+    <meta itemprop="name" content="VOICEofHeaven — VOH Ministries"/>
+    <meta itemprop="url" content="https://www.voiceoftheheaven.com"/>
+    <meta name="twitter:title" content="VOICEofHeaven — VOH Ministries"/>
+    <meta name="twitter:url" content="https://www.twitter.com/MyVoiceOfHeaven"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="description" content="" />
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -20,6 +32,9 @@
 
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Cool CSS Effects -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,14 +56,14 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="<%= root_path %>">
-        <%= image_tag("VoiceOfHeavenLogo.JPG", {:class => "d-inline-block align-top", :style => "height:30px;width:30px;"}) %>
+        <%= image_tag("VoiceOfHeavenLogo.png", {:class => "d-inline-block align-top", :style => "height:30px;width:30px;"}) %>
         <strong>VOICE OF HEAVEN</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="https://www.youtube.com/channel/UCOv7i1ojVrfHxMj2KAuKxtg" target="_blank">
-        <strong>SUBSCRIBE YOUTUBE CHANNEL</strong>
+        <strong>SUBSCRIBE ON YOUTUBE</strong>
       </a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -69,6 +84,9 @@
           </li>
           <li class="nav-item <%= active_class?(abouts_path) %>">
             <a class="navbar-brand nav-link" href="<%= abouts_path %>">ABOUT</a>
+          </li>
+          <li class="nav-item <%= active_class?(stores_path) %>">
+            <a class="navbar-brand nav-link" href="<%= stores_path %>">STORE</a>
           </li>
           <li class="nav-item <%= active_class?(gives_path) %>">
             <a class="navbar-brand nav-link" href="<%= gives_path %>">GIVE</a>
